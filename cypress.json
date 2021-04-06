@@ -1,0 +1,20 @@
+{
+  "baseUrl": "https://www.didomi.io/",
+  "integrationFolder": "cypress/integration/",
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "watchForFileChanges": true,
+  "projectId": "test",
+  "chromeWebSecurity": false,
+  "video": false,
+  "numTestsKeptInMemory": 0,
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "reporter": "mocha-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "spec, mocha-junit-reporter",
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "cypress/results/output-[hash].xml",
+      "includePending": true
+    }
+  }
+}

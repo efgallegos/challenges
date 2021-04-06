@@ -1,0 +1,25 @@
+# dependencies
+node_modules
+
+# Yarn
+yarn-error.log
+
+# NPM
+package-lock.json
+
+# Env
+.env*
+cypress.env.json
+testing/.env*
+
+# Cypress Media
+cypress/videos
+cypress/screenshots
+cypress/mochawesome-report
+cypress/results
+
+# OS
+.DS_Store
+
+#VS Code
+.vscode/
