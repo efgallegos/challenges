@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:14-alpine3.11' } }
+    agent { docker { image 'cypress/browsers:node14.16.0-chrome90-ff88' } }
     stages {
         stage('build') {
             steps {
