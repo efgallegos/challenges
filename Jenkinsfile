@@ -15,7 +15,7 @@ pipeline {
     }
     post {
         always {
-            junit 'cypress/reports/*.xml'
+            junit '/var/jenkins_home/workspace/**/cypress/reports/*.xml'
         }
     }
 }
