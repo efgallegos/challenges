@@ -1,14 +1,9 @@
 pipeline {
-    agent { docker { image 'alpine3.11' } }
+    agent { docker { image 'node:14-alpine3.11' } }
     stages {
         stage('build') {
             steps {
                 sh 'yarn'
-            }
-        },
-        stage('lint') {
-            steps {
-                sh 'yarn lint'
             }
         },
         stage('test') {
