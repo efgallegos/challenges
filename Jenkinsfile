@@ -11,5 +11,11 @@ pipeline {
                 sh 'yarn cypress:run'
             }
         }
-  }
+        
+    }
+    post {
+        always {
+            junit 'cypress/reports/*.xml'
+        }
+    }
 }
